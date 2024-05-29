@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tur">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRENDSES</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=UQxoJSbS"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ornekStil2.css" />
+
+    <style>
+     
+      ul{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    
+    ul#main li {
+        float: left;
+        position: relative;
+        width: 300 px;
+    }
+    
+    ul#main li ul{
+    
+        display: none;
+        position: absolute;
+        left: o;
+        top: 30px;
+    }
+    ul li a{
+    
+        display: block;
+        width: 500px;
+        height: 30px;
+        line-height: 30px;
+    
+        background-color: #BC7FCD;
+        text-align: center;
+        color: aliceblue;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        background-color:#86469C ;
+    }
+    ul#main li:hover ul{
+        display: block;
+    }
+    button:hover{
+        background-color:#86469C ;
+    }
+    button:hover ul{
+        display: block;
+    }
+       .kutu1{
+        background-color: white;
+        width: 50 PX;
+        height:70 PX;
+        padding: 10px;
+        margin-right: 10px;
+        
+        float: left;
+       }
+       button:hover{
+    background-color:#86469C ;
+      }
+        button:hover ul{
+            display: block;
+     }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 style="color: #86469c" id="erkek_ses-dosyasi">TRENDSES</h1>
+      <ul id="main">
+        <li><a href="trendses.html"> ANASAYFA</a></li>
+        
+        
+        <li><a href="sepetim.html"> SEPETİM</a></li>
+        <li><a href="kullanicigirişi.html"> KULLANICI GİRİŞİ</a></li>
+     
+            
+        
+        <a href="kadinaltgiyim.html">
+        <div class="kutu1">
+            <img src="resimler/giyim/kadın/k_alt_giyim/1_org_zoom (1).webp" width="300px" height="500px">
+            <h2>KADIN ALT GİYİM</h2>
+            
+        </div>
+        </a>
+        <a href="kadinayakkabi.html">
+            <div class="kutu1">
+                <img src="resimler/giyim/kadın/k_ayakkabi/1_org_zoom (3).webp" width="300px" height="500px">
+                <h2>bilinmiyor</h2>
+                <button>KADIN AYAKKABI</button>
+            </div>
+        </a>
+        <a href="kadinçanta.html">
+                <div class="kutu1">
+                    <img src="resimler/giyim/kadın/k_canta/1_org_zoom (2).webp" width="300px" height="500px">
+                    <h2>KADIN ÇANTA</h2>
+                    
+                </div>
+                </a>
+        <a href="kadinüstgiyim.html">
+                    <div class="kutu1">
+                        <img src="resimler/giyim/kadın/k_ust_giyim/1_org_zoom (3).webp" width="300px" height="500px">
+                        <h2>KADIN ÜST GİYİM</h2>
+                        
+                    </div>
+        </a>
+        
+        
+
+
+    </ul>
+
+
+    <br /><br /><br /><br />
+    <form id="redirectForm">
+      <label for="kadin_girdi_alma">Sayıyı girin:</label>
+      <input type="number" name="kadin_girdi_alma" id="kadin_girdi_alma" />
+      <button type="button" onclick="kadin_yonlendirme()">TIKLA</button>
+    </form>
+    <script src="sepetEkleme.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

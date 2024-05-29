@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tur">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRENDSES</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=UQxoJSbS"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ornekStil2.css" />
+
+    <style>
+      body {
+        background-color: #ffcdea;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 style="color: #86469c" id="erkek_ses-dosyasi">TRENDSES</h1>
+
+      <div class="container"> 
+        <h1 style="color: #86469c" >ÇANTA</h1>
+       
+        <div id="alerts"></div>
+     <div class="productcont">
+             <div class="product">
+              <img src="./resimler/kadin_g/kadin_canta/1_org_zoom_23.webp"width="200" height="300" alt="">
+                 <h3 class="productname">BORDO KOL ÇANTASI</h3>
+                 <p>Uzunluğu 30cm,genişliği 10cm, 2 bölmeli kısa askılı bordo kol çantası</p>
+                 <p class="price">250TL</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+              <img src="./resimler/kadin_g/kadin_canta/1_org_zoom_24.webp"width="200" height="300" alt="">
+                 <h3 class="productname">BEYAZ KOL ÇANTASI</h3>
+                 <p>Beyaz kısa askılı genişliği12cm,uzunluğu 25cm, tek bölmeli kol çantası</p>
+                 <p class="price">300TL</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+              <img src="./resimler/kadin_g/kadin_canta/1_org_zoom_25.webp" alt="">
+                 <h3 class="productname">SİYAH OMUZ ÇANTASI</h3>
+                 <p>Siyah renkli,kapaklı 18x26 uzun askılı omuz çantası</p>
+                 <p class="price">149TL</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             </div>
+             <div class="cart-container">
+              <h2>Cart</h2>
+              <table>
+                <thead>
+                  <tr>
+                  <th><strong>Product</strong></th>
+                  <th><strong>Price</strong></th>
+                </tr>
+                </thead>
+                <tbody id="carttable">
+                </tbody>
+              </table>
+              <hr>
+              <table id="carttotals">
+                <tr>
+                  <td><strong>Items</strong></td>
+                  <td><strong>Total</strong></td>
+                </tr>
+                <tr>
+                  <td>x <span id="itemsquantity">0</span></td>
+                 
+                  <td>$<span id="total">0</span></td>
+                </tr></table>
+        
+                
+              <div class="cart-buttons">  
+                <button id="emptycart">Empty Cart</button>
+                <button id="checkout">Checkout</button>
+              </div>
+            </div>
+        </div>
+  
+    <br /><br /><br /><br />
+    <form id="redirectForm">
+      <label for="erkek_girdi_alma">Sayıyı girin:</label>
+      <input type="number" name="erkek_girdi_alma" id="erkek_girdi_alma" />
+      <button type="button" onclick="erkek_yonlendirme()">TIKLA</button>
+    </form>
+    <script src="sepetEkleme.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

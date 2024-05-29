@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tur">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRENDSES</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=UQxoJSbS"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ornekStil2.css" />
+
+    <style>
+      body {
+        background-color: #ffcdea;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 style="color: #86469c" id="ses-dosyasi">TRENDSES</h1>
+      <ul id="main">
+        <li><a href="trendses.html"> ANASAYFA</a></li>
+        <li>
+          <a href="kadingiyim.html"> KADIN</a>
+          <ul>
+            <li><a href="kadinustgiyim.html"> ÜST GİYİM</a></li>
+            <li><a href="kadinaltgiyim.html"> ALT GİYİM</a></li>
+            <li><a href="kadnayakkab.html"> AYAKKABI</a></li>
+            <li><a href="kadncanta.html"> ÇANTA</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="erkekgiyim.html"> ERKEK</a>
+          <ul>
+            <li>
+              <a id="article-container" href="erkekustgiyim.html"> ÜST GİYİM</a>
+            </li>
+            <li><a href="erkekaltkgiyim.html"> ALT GİYİM</a></li>
+            <li><a href="erkekayakkabi.html"> AYAKKABI</a></li>
+            <li><a href="erkekcanta.html"> ÇANTA</a></li>
+          </ul>
+        </li>
+        <li><a href="sepetim.html"> SEPETİM</a></li>
+        <li><a href="kullancgirisi.html"> KULLANICI GİRİŞİ</a></li>
+        <li><a href="kayit.php"> KAYDOL</a></li>
+      </ul>
+    </nav>
+
+    <a href="kadingiyim.html">
+      <img src="resimler/394678.jpg" alt="" width="1600px" height="914" />
+    </a>
+    <a href="erkekgiyim.html">
+      <img
+        src="resimler/5bb80da0-2966-4b4d-ba81-dc492c621fed_size1600x914_cropCenter.jpg"
+        alt=""
+      />
+    </a>
+
+    <br /><br /><br /><br />
+    <form id="redirectForm">
+      <label for="girdi-alma">Sayıyı girin:</label>
+      <input
+        type="number"
+        name="girdi-alma"
+        id="girdi-alma"
+        autofocus="autofocus"
+      />
+      <button type="button" onclick="yonlendirme()">TIKLA</button>
+    </form>
+    <script src="sepeteEkle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

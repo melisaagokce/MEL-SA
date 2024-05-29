@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tur">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRENDSES</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=UQxoJSbS"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ornekStil2.css" />
+
+    <style>
+      body {
+        background-color: #ffcdea;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 style="color: #86469c" id="canta_ses-dosyasi">TRENDSES</h1>
+
+      <div class="container"> 
+        <h1 style="color: #86469c;">  ERKEK ÇANTA</h1>
+       
+        <div id="alerts"></div>
+     <div class="productcont">
+             <div class="product">
+                  <img src="./resimler/erkek_g/erkek_canta/1_org_zoom_8.webp"  height="300" width="200"  alt="">
+                 <h3 id="urunAdi" class="productname">Siyah Bel Çantası</h3>
+                 <p id="urunAciklama">İki bölmeye sahip siyah askısı ayarlanabilir bel çantası </p>
+                 <p id="urunFiyat" class="price">$13</p>
+                 <form id="redirectForm">
+                  
+                  <input type="number" id="inputNumber" name="inputNumber" autofocus />
+                  <button class="addedtocart" id="redirectButton" type="button">Sepete Ekle</button>
+                </form>
+             </div>
+             <div class="product">
+                  <img src="./resimler/erkek_g/erkek_canta/1_org_zoom_10.webp" height="300" width="200" alt="">
+                 <h3 id="urunAdi" class="productname">Siyah Sırt Çantası</h3>
+                 <p id="urunAciklama">Ürün uzunluğu 40 cm ve genişliği 23 cm olan siyah sade sırt çantası. İki bölmesi vardır.</p>
+                 <p id="urunFiyat" class="price">$12</p>
+                 <button class="addtocart">Sepete Ekle</button>
+             </div>
+             <div class="product">
+                  <img src="./resimler/erkek_g/erkek_canta/1_org_zoom_9.webp"  height="300" width="200" alt="">
+                 <h3 class="productname">Bel Çantası</h3>
+                 <p>Hem sırt hem de bel çantası olarak kullanabileceğiniz bu ürün siyah renkte , 25 cm uzunluğu ve 15 cm genişliğe sahiptir. İki bölmesi vardır.</p>
+                 <p class="price">$10</p>
+                 <button class="addtocart">Sepete Ekle</button>
+             </div>
+             </div>
+             <div class="cart-container">
+              <h2 style="color: #86469c;">SEPETİM</h2>
+              <table>
+                <thead>
+                  <tr>
+                  <th><strong>Product</strong></th>
+                  <th><strong>Price</strong></th>
+                </tr>
+                </thead>
+                <tbody id="carttable">
+                </tbody>
+              </table>
+              <hr>
+              <table id="carttotals">
+                <tr>
+                  <td><strong>Items</strong></td>
+                  <td><strong>Total</strong></td>
+                </tr>
+                <tr>
+                  <td>x <span id="itemsquantity">0</span></td>
+                 
+                  <td>$<span id="total">0</span></td>
+                </tr></table>
+        
+                
+              <div class="cart-buttons">  
+                <button id="emptycart">Empty Cart</button>
+                <button id="checkout">Checkout</button>
+              </div>
+            </div>
+        </div>
+  
+    <br /><br /><br /><br />
+    <form id="redirectForm">
+      <label for="canta_girdi_alma">Sayıyı girin:</label>
+      <input type="number" name="canta_girdi_alma" id="canta_girdi_alma" />
+      <button type="button" onclick="canta_yonlendirme()">TIKLA</button>
+    </form>
+    <script src="sepetEkleme.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tur">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRENDSES</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=UQxoJSbS"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #ffcdea;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 style="color: #86469c" id="kadin_ses-dosyasi">TRENDSES</h1>
+      <div class="container"> 
+        <h1 style="color: #86469c">ALT GİYİM GİYİM </h1>
+       
+        <div id="alerts"></div>
+     <div class="productcont">
+             <div class="product">
+              <img src="./resimler/erkek_g/erkek_alt/1_org_zoom.webp" height="300" width="200">
+                 <h3 class="productname">KUMAŞ PANTOLON</h3>
+                 <p>Siyah renk,normal bel, rahat kesim parlak kumaşlı pantolon</p>
+                 <p class="price">500 TL</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+              <img src="./resimler/erkek_g/erkek_alt/1_org_zoom_2.webp" width="200" height="300" alt="">
+                 <h3 class="productname">BEYAZ KOT PANTOLON</h3>
+                 <p>Beyaz renkli cepli bol kesim kumaş kargo pantolon</p>
+                 <p class="price">200 TL</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+              <img src="./resimler/erkek_g/erkek_alt/1_org_zoom_3.webp" width="200" height="300"alt="">
+                 <h3 class="productname">JOGGER EŞOFMAN</h3>
+                 <p>Lacivert bol kesim, cepli jogger eşofman altı</p>
+                 <p class="price">100TL</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             </div>
+             <div class="cart-container">
+              <h2>Cart</h2>
+              <table>
+                <thead>
+                  <tr>
+                  <th><strong>Product</strong></th>
+                  <th><strong>Price</strong></th>
+                </tr>
+                </thead>
+                <tbody id="carttable">
+                </tbody>
+              </table>
+              <hr>
+              <table id="carttotals">
+                <tr>
+                  <td><strong>Items</strong></td>
+                  <td><strong>Total</strong></td>
+                </tr>
+                <tr>
+                  <td>x <span id="itemsquantity">0</span></td>
+                 
+                  <td>$<span id="total">0</span></td>
+                </tr></table>
+        
+                
+              <div class="cart-buttons">  
+                <button id="emptycart">Empty Cart</button>
+                <button id="checkout">Sepeti Onayla</button>
+              </div>
+            </div>
+        </div>
+  
+
+    <br /><br /><br /><br />
+    <form id="redirectForm">
+      <label for="kadin_girdi_alma">Sayıyı girin:</label>
+      <input type="number" name="kadin_girdi_alma" id="kadin_girdi_alma" />
+      <button type="button" onclick="kadin_yonlendirme()">TIKLA</button>
+    </form>
+
+
+
+
+    <script src="sepeteEkle.js" ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

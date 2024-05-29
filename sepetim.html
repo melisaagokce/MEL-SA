@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tur">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRENDSES</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=UQxoJSbS"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="ornekStil2.css" />
+
+    <style>
+      body {
+        background-color: #ffcdea;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 style="color: #86469c" id="sepet_ses-dosyasi">TRENDSES</h1>
+
+    <br /><br /><br /><br />
+    <div class="cart-container">
+      <h2>Cart</h2>
+      <table>
+        <thead>
+          <tr id="sepetUrun">
+          <th id="sUrunAdi"><strong>Product</strong></th>
+          <th id="sUrunFiyat"><strong>Price</strong></th>
+        </tr>
+        </thead>
+        <tbody id="carttable">
+        </tbody>
+      </table>
+      <hr>
+      <table id="carttotals">
+        <tr>
+          <td><strong>Items</strong></td>
+          <td><strong>Total</strong></td>
+        </tr>
+        <tr>
+          <td>x <span id="itemsquantity">0</span></td>
+         
+          <td>$<span id="total">0</span></td>
+        </tr></table>
+
+        
+      <div class="cart-buttons">  
+        <button id="emptycart">Empty Cart</button>
+        <button id="checkout">Checkout</button>
+      </div>
+    </div>
+</div>
+            
+    <form id="redirectForm">
+      <label for="sepet_ekle_girdi">Sayıyı girin:</label>
+      <input type="number" name="sepet_ekle_girdi" id="sepet_ekle_girdi" />
+      <button type="button" onclick="sepet_yonlendirme()">TIKLA</button>
+    </form>
+    <script src="sepetEkleme.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

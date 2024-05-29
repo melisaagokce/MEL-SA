@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tur">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRENDSES</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=UQxoJSbS"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ornekStil2.css" />
+
+    <style>
+      body {
+        background-color: #ffcdea;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 style="color: #86469c" id="erkek_ses-dosyasi">TRENDSES</h1>
+
+      <div class="container"> 
+        <h1 style="color: #86469c">ALT GİYİM</h1>
+       
+        <div id="alerts"></div>
+     <div class="productcont">
+             <div class="product">
+              <img src="./resimler/kadin_g/kadin_alt/1_org_zoom_14.webp" width="200" height="300"alt="">
+                 <h3 class="productname">BEYAZ PANTOLON</h3>
+                 <p>Beyaz bol paçalı rahat kalıp kot pantolon</p>
+                 <p class="price">TL 170</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+              <img src="./resimler/kadin_g/kadin_alt/1_org_zoom_15.webp" width="200" height="300"alt="">
+                 <h3 class="productname">KOT PANTOLON</h3>
+                 <p>Mavi renk ispanyol paça kot pantolon</p>
+                 <p class="price">278</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+              <img src="./resimler/kadin_g/kadin_alt/1_org_zoom_16.webp"  width="200" height="300"alt="">
+                 <h3 class="productname">KOT ŞORT</h3>
+                 <p>Mavi renk yüksel bel rahat kalıp kot şort</p>
+                 <p class="price">20</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             </div>
+             <div class="cart-container">
+              <h2>Cart</h2>
+              <table>
+                <thead>
+                  <tr>
+                  <th><strong>Product</strong></th>
+                  <th><strong>Price</strong></th>
+                </tr>
+                </thead>
+                <tbody id="carttable">
+                </tbody>
+              </table>
+              <hr>
+              <table id="carttotals">
+                <tr>
+                  <td><strong>Items</strong></td>
+                  <td><strong>Total</strong></td>
+                </tr>
+                <tr>
+                  <td>x <span id="itemsquantity">0</span></td>
+                 
+                  <td>$<span id="total">0</span></td>
+                </tr></table>
+        
+                
+              <div class="cart-buttons">  
+                <button id="emptycart">Empty Cart</button>
+                <button id="checkout">Checkout</button>
+              </div>
+            </div>
+        </div>
+  
+    <br /><br /><br /><br />
+    <form id="redirectForm">
+      <label for="erkek_girdi_alma">Sayıyı girin:</label>
+      <input type="number" name="erkek_girdi_alma" id="erkek_girdi_alma" />
+      <button type="button" onclick="erkek_yonlendirme()">TIKLA</button>
+    </form>
+    <script src="sepetEkleme.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+</html>

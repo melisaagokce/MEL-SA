@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tur">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRENDSES</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=UQxoJSbS"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ornekStil2.css" />
+   
+
+    <style>
+      body {
+        background-color: #ffcdea;
+      }
+      ul{
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+  
+  ul#main li {
+      float: left;
+      position: relative;
+      width: 300 px;
+  }
+  
+  ul#main li ul{
+  
+      display: none;
+      position: absolute;
+      left: o;
+      top: 30px;
+  }
+  ul li a{
+  
+      display: block;
+      width: 500px;
+      height: 30px;
+      line-height: 30px;
+  
+      background-color: #BC7FCD;
+      text-align: center;
+      color: aliceblue;
+      text-decoration: none;
+  }
+  ul li a:hover{
+      background-color:#86469C ;
+  }
+  ul#main li:hover ul{
+      display: block;
+  }
+  button:hover{
+      background-color:#86469C ;
+  }
+  button:hover ul{
+      display: block;
+  }
+     .kutu1{
+      background-color: white;
+      width: 50 px;
+      height: 70 px;
+      padding: 10px;
+      margin-right: 10px;
+      
+      float: left;
+     }
+    
+      button:hover ul{
+          display: block;
+   }
+    </style>
+  </head>
+  <body>
+      <nav class="navbar">
+        <h1 style="color: #86469C;" id="ses-dosyasi">TRENDSES</h1>
+        <ul id="main">
+            <li><a href="trendses.html"> ANASAYFA</a></li>
+            
+            
+            <li><a href="sepetim.html"> SEPETİM</a></li>
+            <li><a href="kullanicigirişi.html"> KULLANICI GİRİŞİ</a></li>
+            <div class="kutu1">
+                <img src="resimler/giyim/kadın/k_ust_giyim/turuncu yeni.jpg" width="300px" height="500px">
+                <h2>Turuncu oversize tişört</h2>
+               
+                
+            </div>
+
+            <a href="erkekaltgiyim.html">
+                <div class="kutu1">
+                    <img src="resimler/giyim/erkek/e__alt_giyim/1_org_zoom (2).webp" width="300px" height="500px">
+                    <h2>ERKEK ALT GİYİM</h2>
+                    
+                </div>
+                </a>
+                <a href="erkekayakkabi.html">
+                    <div class="kutu1">
+                        <img src="resimler/giyim/erkek/e_ayakkabi/1_org_zoom (2).webp" width="300px" height="500px">
+                        <h2>ERKEK AYAKKABI</h2>
+                        
+                    </div>
+                </a>
+                <a href="erkekçanta.html">
+                        <div class="kutu1">
+                            <img src="resimler/giyim/erkek/e_canta/1_org_zoom (5).webp" width="300px" height="500px">
+                            <h2>ERKEK ÇANTA</h2>
+                            
+                        </div>
+                        </a>
+                <a href="erkeküstgiyim.html">
+                            <div class="kutu1">
+                                <img src="resimler/giyim/erkek/e_ust_giyim/1_org_zoom (4).webp" width="300px" height="500px">
+                                <h2>ERKEK ÜST GİYİM</h2>
+                                
+                            </div>
+                </a>
+
+
+        </ul>
+
+
+      
+    <br /><br /><br /><br />
+    <form id="redirectForm">
+      <label for="erkek_girdi_alma">Sayıyı girin:</label>
+      <input type="number" name="erkek_girdi_alma" id="erkek_girdi_alma" />
+      <button type="button" onclick="erkek_yonlendirme()">TIKLA</button>
+    </form>
+    <script src="sepetEkleme.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

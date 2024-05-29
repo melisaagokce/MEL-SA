@@ -1,0 +1,41 @@
+
+
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul#main li {
+    float: left;
+    position: relative;
+    width: 300 px;
+}
+
+ul#main li ul{
+
+    display: none;
+    position: absolute;
+    left: o;
+    top: 30px;
+}
+ul li a{
+
+    display: block;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+
+    background-color: #BC7FCD;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
+}
+ul li a:hover{
+    background-color:#86469C ;
+}
+ul#main li:hover ul{
+    display: block;
+}
+
