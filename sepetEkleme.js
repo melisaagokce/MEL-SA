@@ -111,32 +111,7 @@ function updateCartTotal() {
   //update items in cart on website HTML
   document.getElementById("itemsquantity").innerHTML = items;
 }
-const inputField = document.getElementById("inputNumber");
-const redirectButton = document.getElementById("redirectButton");
-
-function redirect() {
-  const enteredNumber = inputField.value;
-  if (enteredNumber) {
-    if (enteredNumber === "1") {
-      addedToCart();
-    } else {
-      const newUrl =
-        "https://www.example.com/?number=" + encodeURIComponent(enteredNumber);
-      window.location.href = newUrl;
-    }
-  } else {
-    alert("Lütfen bir sayı giriniz.");
-  }
-}
-
-redirectButton.addEventListener("click", redirect);
-
-inputField.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    redirect();
-  }
-});
+;
 //user feedback on successful add
 function addedToCart(pname) {
   var message = pname + " was added to the cart";
